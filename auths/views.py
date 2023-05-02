@@ -3,9 +3,6 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 
-# PostgreSQL psycopg2
-import psycopg2
-
 from .forms import LoginForm, RegisterForm
 from .models import Users
 from django.core.mail import send_mail
