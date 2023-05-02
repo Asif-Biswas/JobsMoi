@@ -1,0 +1,75 @@
+/* * {
+  font-family: 'Cormorant Upright', serif;
+}
+
+body {
+  font-family: 'Cormorant Upright', serif;
+} */
+
+
+/* Navbar */
+
+
+header nav .nav-wrapper .brand-logo {
+  color: rgb(0, 0, 0);
+}
+
+
+header nav .nav-wrapper .brand-logo:hover {
+  text-decoration-line: none;
+}
+
+
+header nav li a {
+  color: rgb(0,0,0);
+  font-size: 18px;
+}
+
+header nav li a:hover {
+  text-decoration-line: none;
+  color: rgb(0,0,0);
+}
+
+
+header nav {
+  background-color: transparent;
+}
+
+
+#nav {
+  background-color: transparent;
+}
+
+
+#nav li a {
+  color: rgb(0,0,0);
+  font-size: 18px;
+}
+
+header #dropdown1 li a {
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* * {
+      font-family: 'Cormorant Upright', serif;
+    }
+
+    body {
+      font-family: 'Cormorant Upright', serif;
+    } */
+
+    header nav {
+      height: 0px;
+    }
+
+}

@@ -1,0 +1,90 @@
+{% extends 'index.html' %}
+{% load static %} 
+
+            {% block content%}
+
+        <article class="container container-fluid" id="belowheaderOne">
+            <div class="clearfix row text-center">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 my-auto belowheaderOne">
+                    
+                    <h1> One stop shop for all your job needs. <br><br> Discuss interviews, compensation, and experiences. </h1>
+                    
+                        <br><br>
+                    
+
+
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 my-auto belowheaderOne">
+                
+                    <img class="img-fluid img-responsive ofc" src="{% static 'images/office-1209640_640.jpg' %}" alt="">
+
+                </div>
+            </div>
+        </article>
+       
+       
+              <br><br>
+
+    <aside class="container container-fluid" id="ourService">
+      <div class="clearfix row text-center">
+        <div class="col s12 m12 l12 xl12">
+
+          <h1 class="animate__animated animate__flash"> Core Features </h1>
+
+            <br>
+
+        </div>
+      </div>
+      <div class="clearfix row text-center">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 my-auto">
+          <div class="card">
+            <div class="card-header">
+              <img class="img-fluid img-responsive" src="{% static 'images/Web-Development.png' %}" alt="Web Development">
+            </div>
+            <div class="card-body">
+              <h3>
+                Chat
+              </h3>
+                <br>
+              <p>
+                Discuss with fellow interviewers their interview experiences, compensation details, and work experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 my-auto">
+          <div class="card">
+            <div class="card-header">
+              <img class="img-fluid img-responsive" src="{% static 'images/Mobile-App-Development.png' %}" alt="Mobile App Development">
+            </div>
+            <div class="card-body">
+              <h3>
+                Apply
+              </h3>
+                <br>
+              <p>
+                Apply to top class jobs at various companies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 my-auto">
+          <div class="card">
+            <div class="card-header">
+              <img class="img-fluid img-responsive" src="{% static 'images/eCommerce.png' %}" alt="eCommerce">
+            </div>
+            <div class="card-body">
+              <h3>
+                Mock Interviews
+              </h3>
+                <br>
+              <p>
+                Jobsmoi's unique mock interview sessions allow you to practise interviews for free.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+{% endblock %}

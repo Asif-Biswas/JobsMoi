@@ -1,0 +1,266 @@
+/* * {
+  font-family: 'Cormorant Upright', serif;
+}
+
+body {
+  font-family: 'Cormorant Upright', serif;
+} */
+
+
+/* Navbar */
+
+header nav .nav-wrapper .brand-logo {
+  color: rgb(0, 0, 0);
+}
+
+
+header nav .nav-wrapper .brand-logo:hover {
+  text-decoration-line: none;
+}
+
+
+header nav li a {
+  color: rgb(0,0,0);
+  font-size: 18px;
+}
+
+header nav li a:hover {
+  text-decoration-line: none;
+  color: rgb(0,0,0);
+}
+
+
+header nav {
+  background-color: transparent;
+}
+
+
+#nav {
+  background-color: transparent;
+}
+
+
+#nav li a {
+  color: rgb(0,0,0);
+  font-size: 18px;
+}
+
+header #dropdown1 li a {
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* * {
+      font-family: 'Cormorant Upright', serif;
+    }
+
+    body {
+      font-family: 'Cormorant Upright', serif;
+    } */
+
+    header nav {
+      height: 0px;
+    }
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent !important;
+  padding: 0;
+  max-height: 100% !important;
+  width: 100% ;
+  margin: auto;
+  overflow-y: auto;
+  border-radius: 2px;
+  will-change: top, opacity;
+}
+.z-depth-5, .modal {
+  -webkit-box-shadow: 0 24px 38px 3px rgba(0,0,0,0), 0 9px 46px 8px rgba(0,0,0,0), 0 11px 15px -7px rgba(0,0,0,0) !important; 
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0), 0 9px 46px 8px rgba(0,0,0,0), 0 11px 15px -7px rgba(0,0,0,0) !important; 
+}
+
+.signmainModal .modal-dialog {
+  max-width: 680px !important;
+margin: 0 auto;
+min-height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 0;
+}
+.signmainModal .modal-body {
+position: relative;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+padding: 0 20px 30px;
+}
+.signmainModal .modal-content {
+border: 0 solid rgba(0,0,0,.2);
+border-radius: 25px;
+background: #fff;
+}
+.signmainModal .modal-header {
+padding: 30px 30px 0;
+border-bottom: 0px solid #dee2e6;
+}
+.signmainModal .nav-tabs {
+  border-bottom: 1px solid transparent;
+  margin-bottom: 20px;
+}
+.signmainModal .nav-tabs .nav-item.show .nav-link, .signmainModal .nav-tabs .nav-link.active {
+color: #19be6f;
+background-color: transparent;
+border-color: transparent;
+border-bottom: 2px solid #19be6f;
+}
+.signmainModal .nav-tabs .nav-link:focus, .signmainModal .nav-tabs .nav-link:hover {
+    border-color: transparent !important;
+}
+.z-depth-5, .modal {
+  -webkit-box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2); 
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2); 
+}
+.signmainModal .nav-tabs .nav-item {
+margin-right: 20px;
+}
+.signmainModal .nav-tabs .nav-link {
+margin-bottom: -1px;
+border: 1px solid transparent;
+border-top-left-radius: .25rem;
+border-top-right-radius: .25rem;
+font-size: 18px;
+line-height: 24px;
+font-weight: 600;
+color: #000;
+padding: 10px 0;
+}
+.signmainModal .form-section{
+text-align: center;
+}
+.signmainModal .form-section h1 {
+margin: 0 0 25px;
+font-weight: 700;
+font-size: 35px;
+line-height: 43px;
+}
+.signmainModal .form-section .subheading {
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+margin: 0 0 30px;
+}
+.signmainModal .form-section .login-logo {
+margin-bottom: 15px;
+width: 292px;
+}
+.signmainModal .form-section .effect-box {
+position: relative;
+}
+.signmainModal .form-section .form-group {
+margin-bottom: 25px;
+}
+.signmainModal .form-section .form-control {
+height: auto;
+font-weight: normal;
+outline: none;
+font-size: 16px;
+line-height: 20px;
+background: #fff;
+box-sizing: border-box;
+padding: 18px 15px;
+display: block;
+transition: 0.2s ease-out;
+border: 1px solid #d3d3d3;
+border-radius: 6px;
+color: #000;
+}
+.signmainModal .form-section .form-group .form-control:focus {
+outline: 0;
+border-color:#d3d3d3;
+box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+}
+.signmainModal .form-section input::placeholder{
+color: #d3d3d3 !important;
+}
+.signmainModal .form-section .form-group .forg-box {
+display: flex;
+align-items: center;
+}
+.signmainModal .form-section .form-group input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+width: 20px;
+height: 20px;
+position: relative;
+-webkit-appearance: none;
+background: transparent;
+outline: none;
+margin-right: 10px;
+cursor: pointer;
+float: left;
+border: 1px solid #d3d3d3;;
+border-radius: 2px;
+opacity: 1 !important;
+}
+.signmainModal .form-section .form-group .forg-box a {
+margin: 0 0 0 auto;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #19be6f;
+background: transparent;
+padding: 0;
+}
+.signmainModal .form-section .form-group .forg-box input[type="checkbox"]:checked {
+outline: none;
+background: url(static/images/checkbox-icon.png);
+background-size: cover;
+}
+.signmainModal .form-section .form-group .forg-box label {
+text-align: left;
+width: max-content;
+margin:0;
+cursor: pointer;
+font-size: 16px;
+color: var(--text-primary);
+}
+
+.signmainModal .form-section .form-group button{
+color: #fff;
+border: none;
+text-align: center;   
+width:max-content;
+padding:16px 85px;
+margin: 10px 0 0;
+background: #19be6f;
+border-radius: 6px;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px
+}
+.signmainModal .form-section h4 {
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+margin: 0 0 20px;
+}
+.signmainModal  .form-section h4 a {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #19be6f;
+}

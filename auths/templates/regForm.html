@@ -1,0 +1,109 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Registration Form</title>
+
+        <link rel="stylesheet" type="text/css" href="{ static 'static/style.css' }">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+        
+        <br><br>
+
+        <article class="container container-fluid">
+            <div class="clearfix row text-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto">
+                    
+                    {% if messages %}
+                    <ul class="messages">
+                        {% for msg in messages %}
+                        <li>
+                            <div id="msg" class="alert alert-{{ msg.level_tag }}" role="alert">
+                                {{ msg.message }}
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                </div>
+            </div>
+            <div class="clearfix row text-center">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 my-auto">
+                
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 my-auto">
+                    
+                    <form action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ regForm.non_field_errors }}
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h1>
+                                    Registration Form
+                                </h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group fieldWrapper">
+                                    {{ regForm.fname.errors }}
+                                    {{ regForm.fname.label }}
+                                    {{ regForm.fname }}
+                                </div>
+                                <div class="form-group fieldWrapper">
+                                    {{ regForm.lname.errors }}
+                                    {{ regForm.lname.label }}
+                                    {{ regForm.lname }}
+                                </div>
+                                <div class="form-group fieldWrapper">
+                                    {{ regForm.email.errors }}
+                                    {{ regForm.email.label }}
+                                    {{ regForm.email }}
+                                </div>
+                                <div class="form-group fieldWrapper">
+                                    {{ regForm.password.errors }}
+                                    {{ regForm.password.label }}
+                                    {{ regForm.password }}
+                                </div>
+                                <div class="form-group fieldWrapper">
+                                    {{ regForm.url.errors }}
+                                    {{ regForm.url.label }}
+                                    {{ regForm.url }}
+                                </div>
+                                <div class="form-group fieldWrapper">
+                                    {{ regForm.contactno.errors }}
+                                    {{ regForm.contactno.label }}
+                                    {{ regForm.contactno }}
+                                </div>
+                                <div class="form-group fieldWrapper">
+                                    <button id="submitBtn" class="form-control btn btn-primary" type="submit"
+                                        name="button">Create Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 my-auto">
+                    
+                </div>
+            </div>
+        </article>
+
+
+        <br>
+
+
+    </body>
+
+</html>
