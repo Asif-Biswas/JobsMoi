@@ -106,6 +106,12 @@
         </div>
     </div>
 
+    {% comment %} make a dropdown section with 1 to 10 numerical options using a for loop {% endcomment %}
+    <select>
+        {% for i in 1..10 %}
+            <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+    </select>
 
     <div class="modal fade" id="create-forum-modal" tabindex="-1" role="dialog" aria-labelledby="create-forum-modal-title" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

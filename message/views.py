@@ -1,12 +1,18 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from .models import Message, Conversation
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from auths.models import Users as User
+from django.contrib import messages as django_messages
 
 # Create your views here.
-@login_required(login_url='/')
+
 def messages(request, active_conversation=None):
+    if not request.user.is_authenticated:
+        message = 'You need to login to view messages.'
+        django_messages.add_message(request, django_messages.WARNING, message)
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
     conversations = Conversation.objects.filter(user_one=request.user) | Conversation.objects.filter(user_two=request.user)
     # order by last message date
     conversations = conversations.order_by('-updated')
@@ -41,8 +47,13 @@ def send_message(request, user_id):
     else:
         return redirect('messages')
 
-@login_required(login_url='/')
+
 def start_conversation(request, user_id):
+    if not request.user.is_authenticated:
+        message = 'You need to login to view messages.'
+        django_messages.add_message(request, django_messages.WARNING, message)
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    
     receiver = User.objects.get(id=user_id)
     sender = request.user
     conversation = Conversation.objects.filter(
